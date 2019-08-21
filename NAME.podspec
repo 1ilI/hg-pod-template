@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.source           = { :git => '', :tag => s.version.to_s }
 
-  s.source_files = 'Classes/**/*.{h,m}','${POD_NAME}Header.h'
+  s.source_files = '${POD_NAME}/Classes/**/*.{h,m}','${POD_NAME}Header.h'
   s.resources = 'Resources/*','Resources/*.xcassets'
   s.resource_bundles = {
     'wccontext' => ['Resources/wccontext_*.json'],

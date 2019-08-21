@@ -75,6 +75,8 @@ module Pod
       # There has to be a single file in the Classes dir
       # or a framework won't be created, which is now default
       `touch Pod/Classes/ReplaceMe.m`
+      `touch Pod/Classes/#{pod_name}Header.h`
+      `touch Pod/Resources/wccontext_#{pod_name}.json`
 
       `mv ./templates/ios/* ./`
 
