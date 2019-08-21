@@ -1,7 +1,7 @@
 module Pod
 
   class ConfigureIOS
-    attr_reader :configurator
+    attr_reader :configurator, :pod_name
 
     def self.perform(options)
       new(options).perform
