@@ -34,6 +34,7 @@ module Pod
       #   when :none
       #     configurator.set_test_framework("xctest", "m", "ios")
       # end
+      configurator.set_test_framework("xctest", "m", "ios")
 
       # snapshots = configurator.ask_with_answers("Would you like to do view based testing", ["Yes", "No"]).to_sym
       # case snapshots

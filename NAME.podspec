@@ -19,10 +19,10 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.source           = { :git => '', :tag => s.version.to_s }
 
-  s.source_files = '${POD_NAME}/Classes/**/*.{h,m}','${POD_NAME}Header.h'
-  s.resources = 'Resources/*','Resources/*.xcassets'
+  s.source_files = '${POD_NAME}/Classes/**/*.{h,m}','${POD_NAME}/${POD_NAME}Header.h'
+  s.resources = '${POD_NAME}/Resources/*','${POD_NAME}/Resources/*.xcassets'
   s.resource_bundles = {
-    'wccontext' => ['Resources/wccontext_*.json'],
+    'wccontext' => ['${POD_NAME}/Resources/wccontext_*.json'],
   }
 
   s.prefix_header_file = '../WCProject/WorkCall/WorkCall-Prefix.pch'
