@@ -69,7 +69,8 @@ module Pod
         :xcodeproj_path => "templates/ios/Example/PROJECT.xcodeproj",
         :platform => :ios,
         :remove_demo_project => (keep_demo == :no),
-        :prefix => prefix
+        :prefix => prefix,
+        :pod_name => @configurator.pod_name
       }).run
 
       # There has to be a single file in the Classes dir
